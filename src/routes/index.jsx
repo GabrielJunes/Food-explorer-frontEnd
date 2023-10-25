@@ -7,7 +7,7 @@ import { AuthRoutes } from "./auth.routes";
 
 export function Routes() {
     const { user, isUserAuthenticated } = useAuth();
-    const isAdmin = user ? user.is_admin : false;
+    const isAdmin = user ? user.isAdmin : false;
 
     const userAuthenticated = isUserAuthenticated();
 
